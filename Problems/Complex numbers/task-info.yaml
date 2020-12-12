@@ -2,11 +2,11 @@ type: code
 files:
 - name: src/Main.java
   visible: true
-  text: // write your class here
+  text: // write the class Complex here
   learner_created: false
-feedback_link: https://hyperskill.org/learn/step/2946#comment
+feedback_link: https://hyperskill.org/learn/step/2940#comment
 status: Solved
 feedback:
   message: <html>Correct solution</html>
-  time: Fri, 11 Dec 2020 17:12:40 UTC
+  time: Fri, 11 Dec 2020 19:01:03 UTC
 record: -1
