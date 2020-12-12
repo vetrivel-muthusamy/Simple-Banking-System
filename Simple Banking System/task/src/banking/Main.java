@@ -3,10 +3,19 @@ package banking;
 import java.util.Scanner;
 
 public class Main {
+
     private static boolean isLogged = false;
     private static final BankSystem bankSystem = new BankSystem();
 
     public static void main(String[] args) {
+
+        // String dbFilename = "db.s3db";
+        if (args.length != 2) {
+            System.out.println("Please specify db name");
+            System.exit(0);
+        }
+        String dbFilename = args[1];
+        Database.init(dbFilename);
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -18,7 +27,6 @@ public class Main {
             int action = Integer.parseInt(scanner.nextLine());
             performAction(action);
         }
-        //System.out.println("Hello, world!");
     }
 
     private static void performAction(int action) {
@@ -44,4 +52,5 @@ public class Main {
                 System.out.println("Wrong option");
         }
     }
+
 }
